@@ -51,7 +51,7 @@ class $modify(Plankton, MenuLayer) {
 
 		text->runAction(
 				CCSequence::create(
-					CCDelayTime::create(0.5f),
+					CCDelayTime::create(2.0f),
 					CCFadeOut::create(2.f),
 					CCCallFunc::create(text, callfunc_selector(CCLayer::removeFromParent)),
 					nullptr
