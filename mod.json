@@ -1,6 +1,11 @@
 {
-	"geode": "2.0.0-beta.22",
-	"gd": "2.204",
+	"geode": "2.0.0-beta.24",
+	"gd": {
+		"win": "2.204",
+		"mac": "2.200",
+		"android": "2.205",
+		"ios": "2.205"
+	},
 	"version": "v1.0.0",
 	"id": "uproxide.all_hail_plankton",
 	"name": "All Hail Plankton",
