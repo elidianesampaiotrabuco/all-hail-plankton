@@ -32,6 +32,9 @@ class $modify(Plankton, MenuLayer) {
 		plankton->setPositionX(winSize.width / 2);
 		text->setPositionX(winSize.width / 2);
 
+		plankton->setPositionY(winSize.height / 2);
+		text->setPositionY(winSize.height / 1.5);
+
 		this->addChild(plankton);
 		this->addChild(text);
 
@@ -39,8 +42,7 @@ class $modify(Plankton, MenuLayer) {
 
 		plankton->runAction(
 				CCSequence::create(
-					CCMoveBy::create(1.5f, ccp(0, winSize.height / 2)),
-					CCDelayTime::create(0.5f),
+					CCDelayTime::create(2.0f),
 					CCFadeOut::create(2.f),
 					CCCallFunc::create(plankton, callfunc_selector(CCLayer::removeFromParent)),
 					nullptr
@@ -49,7 +51,6 @@ class $modify(Plankton, MenuLayer) {
 
 		text->runAction(
 				CCSequence::create(
-					CCMoveBy::create(1.5f, ccp(0, winSize.height / 1.5)),
 					CCDelayTime::create(0.5f),
 					CCFadeOut::create(2.f),
 					CCCallFunc::create(text, callfunc_selector(CCLayer::removeFromParent)),
