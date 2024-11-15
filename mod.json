@@ -11,6 +11,9 @@
 	"name": "All Hail Plankton",
 	"developer": "Uproxide",
 	"description": "Well Plan Z failed... What now?",
+	"tags": [
+		"joke", "offline"
+	],
 	"resources": {
 		"files": [
 			"resources/audio/*.mp3"
